@@ -1,0 +1,68 @@
+ui-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 3px double orange; 
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 950px;
+}
+
+.orange-border-box {
+    border: 2px solid orange;
+    padding: 15px;
+    margin: 10px auto;
+    width: fit-content;
+}
+/*  Implemented Grid for the animal images layout */
+#display-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+    min-height: 250px;
+}
+
+.animal-card {
+    border: 2px solid orange;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hide-btn {
+    background-color: #0070c0;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/*Using Flexbox to spread buttons across the bottom */
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.reveal-btn, .orange-sq-btn {
+    padding: 15px 25px;
+    background-color: white;
+    border: 2px solid orange;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0; 
+}
+/* button changes to green and rounded when active */
+.active-btn {
+    background-color: #92d050 !important;
+    border-radius: 25px !important;
+    border: 2px solid green !important;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
