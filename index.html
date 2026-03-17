@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Reveal UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="ui-container">
+        <h1 class="orange-border-box">Welcome to the Interactive Reveal What's that Animal UI</h1>
+        <p class="orange-border-box">Click on the buttons below to reveal the animal images</p>
+
+        <div id="display-area"></div>
+
+        <div class="button-group">
+            <button class="reveal-btn" data-animal="cat">Reveal a CAT</button>
+            <button class="reveal-btn" data-animal="dog">Reveal a DOG</button>
+            <button class="reveal-btn" data-animal="cow">Reveal a COW</button>
+        </div>
+
+        <div class="footer">
+            <button id="reset-zoo" class="orange-sq-btn">Reset Zoo</button>
+            <h3 id="counter-display">Animals on screen: 0</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
